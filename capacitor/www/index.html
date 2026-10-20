@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="catalogo.titulo">Mis juegos de mesa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html" data-i18n-html="app.logo">🎲 Mis <span>juegos de mesa</span></a>
+    <nav class="nav">
+      <a class="activo" href="index.html" data-i18n="nav.catalogo">Catálogo</a>
+      <a href="crear.html" data-i18n="nav.crear">➕ Crear juego</a>
+      <a class="destacado" href="asistente.html" data-i18n="nav.asistente">✨ ¿A qué jugamos?</a>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <aside class="filtros" id="filtros" aria-label="Filtros" data-i18n-attr="aria-label:filtros.titulo">
+      <h2><span data-i18n="filtros.titulo">Filtros</span>
+        <span>
+          <button class="btn btn-ghost" id="limpiar" type="button" data-i18n="filtros.limpiar">Limpiar</button>
+          <button class="cerrar-filtros" id="cerrar-filtros" type="button" aria-label="Cerrar filtros" data-i18n-attr="aria-label:filtros.cerrar">✕</button>
+        </span>
+      </h2>
+
+      <div class="grupo">
+        <label for="f-texto" data-i18n="filtros.buscar">Buscar</label>
+        <input type="search" id="f-texto" placeholder="Nombre, mecánica, tema…" data-i18n-attr="placeholder:filtros.buscarPlaceholder">
+      </div>
+
+      <div class="grupo">
+        <label for="f-jugadores" data-i18n="filtros.numJugadores">Número de jugadores</label>
+        <select id="f-jugadores">
+          <option value="" data-i18n="filtros.cualquiera">Cualquiera</option>
+          <option value="1" data-i18n="filtros.solitario">1 (solitario)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8" data-i18n="filtros.ochoOMas">8 o más</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <label for="f-tiempo"><span data-i18n="filtros.tiempoPartida">Tiempo de partida:</span> <span class="valor-rango" id="v-tiempo">Sin límite</span></label>
+        <input type="range" id="f-tiempo" min="15" max="240" step="15" value="240">
+      </div>
+
+      <div class="grupo">
+        <label for="f-prep"><span data-i18n="filtros.tiempoPrep">Tiempo de preparación:</span> <span class="valor-rango" id="v-prep">Sin límite</span></label>
+        <input type="range" id="f-prep" min="2" max="30" step="1" value="30">
+      </div>
+
+      <div class="grupo">
+        <span class="titulo" data-i18n="filtros.tipo">Tipo</span>
+        <div class="opciones">
+          <label><input type="checkbox" id="f-party"> <span data-i18n="filtros.party">🎉 Juegos party</span> <span class="contador-opcion" id="n-party"></span></label>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <span class="titulo" data-i18n="filtros.dificultad">Dificultad</span>
+        <div class="opciones" id="f-dificultad"></div>
+      </div>
+
+      <div class="grupo">
+        <span class="titulo" data-i18n="filtros.modo">Modo de juego</span>
+        <div class="opciones" id="f-modo"></div>
+      </div>
+
+      <div class="grupo">
+        <span class="titulo" data-i18n="filtros.ambientacion">Ambientación</span>
+        <div class="opciones scroll" id="f-ambientacion"></div>
+      </div>
+
+      <div class="grupo">
+        <label for="f-historial" data-i18n="filtros.misPartidas">Mis partidas</label>
+        <select id="f-historial">
+          <option value="" data-i18n="filtros.todos">Todos</option>
+          <option value="nuevos" data-i18n="filtros.sinEstrenar">Sin estrenar</option>
+          <option value="jugados" data-i18n="filtros.jugados">Ya jugados</option>
+          <option value="favoritos" data-i18n="filtros.favoritos">Favoritos (nota 4–5)</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <span class="titulo" data-i18n="filtros.mecanicas">Mecánicas (deben estar todas)</span>
+        <div class="opciones scroll" id="f-mecanicas"></div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="resultados-cabecera">
+        <h1><span id="contador">0</span> <span data-i18n="catalogo.juegos">juegos</span></h1>
+        <div>
+          <button class="btn boton-filtros" id="abrir-filtros" type="button" data-i18n="filtros.abrir">☰ Filtros</button>
+          <label for="orden" style="position:absolute;left:-9999px" data-i18n="orden.etiqueta">Ordenar</label>
+          <select id="orden">
+            <option value="nombre" data-i18n="orden.nombre">Ordenar: nombre</option>
+            <option value="duracion" data-i18n="orden.duracion">Ordenar: duración</option>
+            <option value="preparacion" data-i18n="orden.preparacion">Ordenar: preparación</option>
+            <option value="dificultad" data-i18n="orden.dificultad">Ordenar: dificultad</option>
+            <option value="valoracion" data-i18n="orden.valoracion">Ordenar: valoración BGG</option>
+            <option value="jugadores" data-i18n="orden.jugadores">Ordenar: máx. jugadores</option>
+            <option value="masjugados" data-i18n="orden.masJugados">Ordenar: más jugados</option>
+            <option value="minota" data-i18n="orden.miNota">Ordenar: mi nota</option>
+          </select>
+          <button class="btn" id="orden-dir" type="button" title="Invertir el orden" data-i18n-attr="title:orden.invertir">↑ Asc.</button>
+        </div>
+      </div>
+      <div class="rejilla" id="rejilla" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <div class="fondo-filtros" id="fondo-filtros"></div>
+
+  <div class="modal-fondo" id="modal-fondo" role="dialog" aria-modal="true">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="data/semilla.js"></script>
+  <script src="js/datos/repositorio.js"></script>
+  <script src="js/datos/almacen.js"></script>
+  <script src="js/datos/almacen-localstorage.js"></script>
+  <script src="js/datos/almacen-capacitor.js"></script>
+  <script src="js/datos/repositorio-local.js"></script>
+  <script src="js/datos/servicio-juegos.js"></script>
+  <script src="js/datos/fabrica.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/app-nativa.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

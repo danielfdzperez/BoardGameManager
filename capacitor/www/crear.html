@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="crear.titulo">Crear juego · Mis juegos de mesa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html" data-i18n-html="app.logo">🎲 Mis <span>juegos de mesa</span></a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.catalogo">Catálogo</a>
+      <a class="activo" href="crear.html" data-i18n="nav.crear">➕ Crear juego</a>
+      <a class="destacado" href="asistente.html" data-i18n="nav.asistente">✨ ¿A qué jugamos?</a>
+    </nav>
+  </header>
+
+  <main class="pagina-form">
+    <div class="form-cabecera">
+      <h1 id="titulo-form" data-i18n="crear.tituloNuevo">Crear un juego nuevo</h1>
+      <div class="form-herramientas">
+        <label for="selector-editar" class="sr-only" data-i18n="crear.editarExistente">Editar un juego existente</label>
+        <select id="selector-editar"><option value="">➕ Juego nuevo</option></select>
+      </div>
+    </div>
+
+    <div id="mensajes" role="alert" aria-live="assertive"></div>
+
+    <form id="formulario" novalidate>
+      <fieldset id="bloque-bgg">
+        <legend data-i18n="crear.bgg.leyenda">Empezar desde BoardGameGeek (opcional)</legend>
+        <div class="campos">
+          <div class="campo ancho"><label for="bgg-entrada" data-i18n="crear.bgg.etiqueta">Rellenar desde BoardGameGeek</label>
+            <div class="barra-acciones" style="margin:0">
+              <input id="bgg-entrada" type="text" inputmode="url" autocomplete="off" placeholder="Número de BGG o dirección de la ficha" data-i18n-attr="placeholder:crear.bgg.placeholder" style="flex:1;min-width:180px">
+              <button type="button" class="btn" id="bgg-rellenar" data-i18n="crear.bgg.boton">⬇ Rellenar desde BGG</button>
+            </div>
+            <small class="ayuda-campo" data-i18n="crear.bgg.ayuda">Sustituye los campos que BGG conoce (no toca preparación, ambientación, experiencia ni party). Revisa los datos antes de guardar.</small>
+            <div id="bgg-mensaje" role="status" aria-live="polite"></div></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s1">1. Lo básico</legend>
+        <div class="campos">
+          <div class="campo ancho"><label for="nombre" data-i18n="crear.f.nombre">Nombre *</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="off" placeholder="Ej.: Las mansiones de la locura" data-i18n-attr="placeholder:crear.f.nombrePlaceholder"></div>
+          <div class="campo"><label for="nombreOriginal" data-i18n="crear.f.nombreOriginal">Nombre original</label>
+            <input id="nombreOriginal" name="nombreOriginal" type="text" autocomplete="off"></div>
+          <div class="campo"><label for="anio" data-i18n="crear.f.anio">Año</label>
+            <input id="anio" name="anio" type="number" min="1800" max="2100" placeholder="2024"></div>
+          <div class="campo"><label for="editorial" data-i18n="crear.f.editorial">Editorial</label>
+            <input id="editorial" name="editorial" type="text" list="lista-editoriales" autocomplete="off">
+            <datalist id="lista-editoriales"></datalist></div>
+          <div class="campo ancho"><label data-i18n="crear.f.disenadores">Diseñadores</label>
+            <div class="etiquetas-input" data-campo="disenadores" data-sugerencias="disenadores" data-ayuda-clave="crear.ayuda.disenadores"></div></div>
+          <div class="campo ancho"><label class="check pendiente-check"><input type="checkbox" id="pendiente" name="pendiente">
+            <span data-i18n-html="crear.f.pendiente">Dejarlo como <strong>pendiente</strong> (solo el nombre es obligatorio; no se recomendará en el asistente hasta completarlo)</span></label></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s2">2. Jugadores y tiempo</legend>
+        <div class="campos">
+          <div class="campo"><label for="jugadoresMin" data-i18n="crear.f.jugadoresMin">Mínimo de jugadores *</label>
+            <input id="jugadoresMin" name="jugadoresMin" type="number" min="1" max="99"></div>
+          <div class="campo"><label for="jugadoresMax" data-i18n="crear.f.jugadoresMax">Máximo de jugadores *</label>
+            <input id="jugadoresMax" name="jugadoresMax" type="number" min="1" max="99"></div>
+          <div class="campo"><label for="mejorCon" data-i18n="crear.f.mejorCon">Mejor con (separado por comas)</label>
+            <input id="mejorCon" name="mejorCon" type="text" placeholder="2, 3"></div>
+          <div class="campo"><label for="recomendado" data-i18n="crear.f.recomendado">Recomendado con</label>
+            <input id="recomendado" name="recomendado" type="text" placeholder="1, 2, 3, 4"></div>
+          <div class="campo"><label for="duracionMin" data-i18n="crear.f.duracionMin">Duración mínima (min) *</label>
+            <input id="duracionMin" name="duracionMin" type="number" min="1"></div>
+          <div class="campo"><label for="duracionMax" data-i18n="crear.f.duracionMax">Duración máxima (min) *</label>
+            <input id="duracionMax" name="duracionMax" type="number" min="1"></div>
+          <div class="campo"><label for="preparacionMin" data-i18n="crear.f.preparacion">Preparación (min) *</label>
+            <input id="preparacionMin" name="preparacionMin" type="number" min="0" placeholder="Ej.: 5" data-i18n-attr="placeholder:crear.f.preparacionPlaceholder"></div>
+          <div class="campo"><label for="edadMinima" data-i18n="crear.f.edad">Edad mínima</label>
+            <input id="edadMinima" name="edadMinima" type="number" min="0" max="99"></div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s3">3. Dificultad</legend>
+        <div class="campos">
+          <div class="campo ancho"><label for="peso"><span data-i18n="crear.f.peso">Peso / complejidad:</span> <output id="salida-peso" class="valor-rango">—</output></label>
+            <input id="peso" name="peso" type="range" min="1" max="5" step="0.05" value="2">
+            <div class="escala-peso"><span data-i18n="crear.f.peso1">1 · muy fácil</span><span data-i18n="crear.f.peso3">3 · media-alta</span><span data-i18n="crear.f.peso5">5 · muy difícil</span></div>
+
+            <small class="ayuda-campo" data-i18n-html="crear.f.pesoAyuda">En BoardGameGeek aparece como «Weight». Fácil &lt; 2 · Media &lt; 2,8 · Difícil &lt; 3,5 · Experto resto.</small>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s4">4. Cómo se juega</legend>
+        <div class="campos">
+          <div class="campo ancho"><label data-i18n="crear.f.modo">Modo de juego *</label><div class="opciones-fila" id="modos"></div></div>
+          <div class="campo ancho"><label class="check"><input type="checkbox" id="party" name="party"> <span data-i18n-html="crear.f.party">🎉 Es un juego <strong>party</strong></span></label></div>
+          <div class="campo ancho"><label data-i18n="crear.f.ambientacion">Ambientación</label>
+            <div class="etiquetas-input" data-campo="ambientacion" data-sugerencias="ambientacion" data-ayuda-clave="crear.ayuda.ambientacion"></div></div>
+          <div class="campo ancho"><label data-i18n="crear.f.experiencia">Tipo de experiencia (lo usa el asistente)</label>
+            <div class="etiquetas-input" data-campo="experiencia" data-sugerencias="experiencia" data-ayuda-clave="crear.ayuda.experiencia"></div></div>
+          <div class="campo ancho"><label data-i18n="crear.f.mecanicas">Mecánicas</label>
+            <div class="etiquetas-input" data-campo="mecanicas" data-sugerencias="mecanicas" data-ayuda-clave="crear.ayuda.mecanicas"></div></div>
+          <div class="campo ancho"><label data-i18n="crear.f.categorias">Categorías</label>
+            <div class="etiquetas-input" data-campo="categorias" data-sugerencias="categorias" data-ayuda-clave="crear.ayuda.categorias"></div></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s5">5. Imagen y descripción</legend>
+        <div class="campos">
+          <div class="campo ancho"><label for="imagen" data-i18n="crear.f.imagen">Dirección de la imagen (URL)</label>
+            <input id="imagen" name="imagen" type="url" placeholder="https://…">
+            <div class="vista-previa"><img id="vista-imagen" alt="Vista previa de la portada" data-i18n-attr="alt:crear.f.vistaPrevia" hidden><span id="vista-estado" class="suave">Sin imagen</span></div></div>
+          <div class="campo ancho"><label for="descripcion" data-i18n="crear.f.descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" rows="6" placeholder="De qué va el juego, cómo se juega…" data-i18n-attr="placeholder:crear.f.descripcionPlaceholder"></textarea></div>
+          <div class="campo ancho"><label for="notas" data-i18n="crear.f.notas">Notas (opcional)</label>
+            <textarea id="notas" name="notas" rows="2" placeholder="Algo a revisar, de dónde salen los datos…" data-i18n-attr="placeholder:crear.f.notasPlaceholder"></textarea></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend data-i18n="crear.s6">6. BoardGameGeek / enlace (opcional)</legend>
+        <div class="campos">
+          <div class="campo ancho"><label for="enlace" data-i18n="crear.f.enlace">Enlace a la ficha (BGG, Kickstarter…)</label>
+            <input id="enlace" name="enlace" type="url" placeholder="https://boardgamegeek.com/boardgame/…"></div>
+          <div class="campo"><label for="bggId" data-i18n="crear.f.bggId">ID de BGG</label><input id="bggId" name="bggId" type="number" min="1"></div>
+          <div class="campo"><label for="valoracionBGG" data-i18n="crear.f.valoracionBgg">Valoración BGG (0–10)</label><input id="valoracionBGG" name="valoracionBGG" type="number" min="0" max="10" step="0.01"></div>
+          <div class="campo"><label for="rankingBGG" data-i18n="crear.f.rankingBgg">Ranking BGG</label><input id="rankingBGG" name="rankingBGG" type="number" min="1"></div>
+        </div>
+      </fieldset>
+
+      <div class="barra-acciones">
+        <button type="submit" class="btn btn-primario" id="guardar" data-i18n="crear.guardar">Guardar juego</button>
+        <button type="button" class="btn" id="limpiar-form" data-i18n="crear.vaciar">Vaciar formulario</button>
+        <button type="button" class="btn btn-peligro" id="eliminar" data-i18n="crear.eliminar" hidden>Eliminar juego</button>
+      </div>
+    </form>
+
+    <section class="caja-cambios" id="caja-copia">
+      <h2 data-i18n="copia.titulo">Copia de seguridad</h2>
+      <p data-i18n-html="copia.explicacion">Exporta todos tus juegos a un archivo <code>.json</code> para guardarlos o pasarlos a otro dispositivo. Al importar, los juegos del archivo se añaden y, si ya tienes uno con el mismo id, se sustituye; el resto no se toca.</p>
+      <p class="suave" data-i18n="copia.aviso">Tus juegos se guardan solo en este navegador (en este dispositivo): si borras los datos del sitio se pierden. Exporta una copia de vez en cuando.</p>
+      <div class="barra-acciones">
+        <button type="button" class="btn btn-primario" id="exportar-json" data-i18n="copia.exportar">⬆ Exportar juegos</button>
+        <button type="button" class="btn" id="importar-json" data-i18n="copia.importar">⬇ Importar juegos</button>
+        <input type="file" id="archivo-json" accept=".json,application/json,text/plain" hidden>
+      </div>
+      <div id="mensaje-copia" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="data/semilla.js"></script>
+  <script src="js/datos/repositorio.js"></script>
+  <script src="js/datos/almacen.js"></script>
+  <script src="js/datos/almacen-localstorage.js"></script>
+  <script src="js/datos/almacen-capacitor.js"></script>
+  <script src="js/datos/repositorio-local.js"></script>
+  <script src="js/datos/servicio-juegos.js"></script>
+  <script src="js/datos/fabrica.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/app-nativa.js"></script>
+  <script src="js/plataforma.js"></script>
+  <script src="js/bgg.js"></script>
+  <script src="js/crear.js"></script>
+</body>
+</html>

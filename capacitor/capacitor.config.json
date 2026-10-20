@@ -1,0 +1,8 @@
+{
+  "appId": "com.mesa.elegirjuego",
+  "appName": "Juegos de mesa",
+  "webDir": "www",
+  "android": {
+    "adjustMarginsForEdgeToEdge": "force"
+  }
+}

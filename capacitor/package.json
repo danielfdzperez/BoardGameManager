@@ -1,0 +1,21 @@
+{
+  "name": "elegir-juego-de-mesa-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App Android (Capacitor) de Elegir juego de mesa",
+  "scripts": {
+    "sync": "cap sync android",
+    "abrir": "cap open android",
+    "probar": "npx --yes http-server www -p 8090 -c-1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}

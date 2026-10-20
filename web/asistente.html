@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="asist.titulo">¿A qué jugamos? · Mis juegos de mesa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html" data-i18n-html="app.logo">🎲 Mis <span>juegos de mesa</span></a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.catalogo">Catálogo</a>
+      <a href="crear.html" data-i18n="nav.crear">➕ Crear juego</a>
+      <a class="activo" href="asistente.html" data-i18n="nav.asistente">✨ ¿A qué jugamos?</a>
+    </nav>
+  </header>
+
+  <main class="asistente" id="asistente" aria-live="polite">
+    <p data-i18n="comun.cargando">Cargando…</p>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="data/semilla.js"></script>
+  <script src="js/datos/repositorio.js"></script>
+  <script src="js/datos/almacen.js"></script>
+  <script src="js/datos/almacen-localstorage.js"></script>
+  <script src="js/datos/almacen-capacitor.js"></script>
+  <script src="js/datos/repositorio-local.js"></script>
+  <script src="js/datos/servicio-juegos.js"></script>
+  <script src="js/datos/fabrica.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/app-nativa.js"></script>
+  <script src="js/asistente.js"></script>
+</body>
+</html>

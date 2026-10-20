@@ -1,0 +1,388 @@
+{
+  "_nombre": "English",
+
+  "app": {
+    "logo": "🎲 My <span>board games</span>"
+  },
+  "idioma": {
+    "etiqueta": "Language"
+  },
+  "nav": {
+    "catalogo": "Catalogue",
+    "crear": "➕ Add game",
+    "asistente": "✨ What shall we play?"
+  },
+  "comun": {
+    "cargando": "Loading…",
+    "cerrar": "Close",
+    "verBgg": "View on BoardGameGeek"
+  },
+  "error": {
+    "carga": "The games could not be loaded"
+  },
+  "unidad": {
+    "min": "min",
+    "minN": "{n} min",
+    "horasN": "{n} h"
+  },
+  "jugadores": {
+    "one": "{n} player",
+    "other": "{n} players"
+  },
+  "dificultad": {
+    "facil": "Easy",
+    "media": "Medium",
+    "dificil": "Hard",
+    "experto": "Expert",
+    "est": "(est.)"
+  },
+  "imagen": {
+    "portada": "Cover of {nombre}"
+  },
+  "valores": {
+    "modo": {
+      "Cooperativo": "Cooperative",
+      "Competitivo": "Competitive",
+      "Solitario": "Solo",
+      "Semicooperativo": "Semi-cooperative",
+      "Por equipos": "Team-based",
+      "Con app": "App-driven",
+      "Narrativo": "Narrative"
+    }
+  },
+  "historial": {
+    "vecesJugado": "Times played: <strong>{n}</strong>",
+    "quitarAria": "Remove one play",
+    "registrar": "+ Log a play",
+    "miNota": "My rating:",
+    "ultima": "Last played: {fecha}",
+    "sinJugar": "Not played yet",
+    "notaAria": "Rating: {nota} out of 5",
+    "estrellasAria": {
+      "one": "{n} star",
+      "other": "{n} stars"
+    }
+  },
+
+  "catalogo": {
+    "titulo": "My board games",
+    "juegos": "games",
+    "ningunoEncaja": "No game matches",
+    "quitaFiltros": "Try removing some filters.",
+    "vacioTitulo": "You have no games yet",
+    "vacioTexto": "This site stores your collection in this browser and starts empty. <a href=\"crear.html\">Add your first game</a> or import a backup (.json file) from the “Backup” section of <a href=\"crear.html\">Add game</a>.",
+    "editar": "Edit this game",
+    "pendienteAviso": "This game still needs to be filled in: press “Edit this game” to complete its details."
+  },
+  "cinta": {
+    "pendiente": "Pending",
+    "sinVerificar": "Unverified",
+    "party": "Party"
+  },
+  "ficha": {
+    "jugadores": "Players",
+    "mejorCon": "Best with",
+    "duracion": "Duration",
+    "preparacion": "Setup",
+    "dificultad": "Difficulty",
+    "edad": "Age",
+    "valoracion": "BGG rating",
+    "modo": "Mode",
+    "mecanicas": "Mechanics",
+    "categorias": "Categories",
+    "diseno": "Design: {valor}",
+    "editorial": "Publisher: {valor}"
+  },
+  "filtros": {
+    "titulo": "Filters",
+    "limpiar": "Clear",
+    "cerrar": "Close filters",
+    "abrir": "☰ Filters",
+    "buscar": "Search",
+    "buscarPlaceholder": "Name, mechanic, theme…",
+    "numJugadores": "Number of players",
+    "cualquiera": "Any",
+    "solitario": "1 (solo)",
+    "ochoOMas": "8 or more",
+    "tiempoPartida": "Play time:",
+    "tiempoPrep": "Setup time:",
+    "sinLimite": "No limit",
+    "hasta": "up to {valor}",
+    "tipo": "Type",
+    "party": "🎉 Party games",
+    "dificultad": "Difficulty",
+    "modo": "Game mode",
+    "ambientacion": "Theme",
+    "misPartidas": "My plays",
+    "todos": "All",
+    "sinEstrenar": "Not played yet",
+    "jugados": "Already played",
+    "favoritos": "Favourites (rating 4–5)",
+    "mecanicas": "Mechanics (all must match)"
+  },
+  "orden": {
+    "etiqueta": "Sort",
+    "nombre": "Sort: name",
+    "duracion": "Sort: duration",
+    "preparacion": "Sort: setup",
+    "dificultad": "Sort: difficulty",
+    "valoracion": "Sort: BGG rating",
+    "jugadores": "Sort: max. players",
+    "masJugados": "Sort: most played",
+    "miNota": "Sort: my rating",
+    "invertir": "Reverse the order",
+    "asc": "↑ Asc.",
+    "desc": "↓ Desc.",
+    "ariaAsc": "Ascending order. Press to reverse it",
+    "ariaDesc": "Descending order. Press to reverse it"
+  },
+
+  "asist": {
+    "titulo": "What shall we play? · My board games",
+    "igual": "Don't mind",
+    "pregunta": "Question {n} of {total}",
+    "atras": "← Back",
+    "verCatalogo": "View catalogue",
+    "reiniciar": "Start over",
+    "cambiarUltima": "← Change the last answer",
+    "tambien": "These could also fit",
+    "mejorOpcion": "Your best match",
+    "otraOpcion": "Another option: #{n}",
+    "afinidad": "{n}% match",
+    "afinidadCorta": "{n}% match",
+    "jugamos": "We'll play this one!",
+    "otra": "Show me another option",
+    "registrada": "Play logged. Enjoy! When you finish, rate it above.",
+    "nadaTitulo": "Oh no, nothing fits",
+    "nadaTexto": "No game in the collection supports that number of players. Time to buy a new one!",
+    "vacioTitulo": "No games yet",
+    "vacioTexto": "The assistant recommends games from your collection, and it is still empty. <a href=\"crear.html\">Add a game</a> or import a backup from <a href=\"crear.html\">Add game</a>.",
+    "relajado": "No game matched everything you asked for, so I relaxed {lista}.",
+    "relajar": {
+      "tiempo": "the available time",
+      "preparacion": "the setup time",
+      "modo": "co-op/competitive",
+      "party": "the party requirement"
+    },
+    "jugadores": {
+      "titulo": "How many of you are playing?",
+      "ayuda": "Only games that support that number of players will be considered.",
+      "ochoOMas": "8 or more",
+      "solitario": "Solo game"
+    },
+    "tiempo": {
+      "titulo": "How much time do you have for the game?",
+      "ayuda": "Not counting the rules explanation or setup.",
+      "o20": "A short while", "o20s": "Up to 20 minutes",
+      "o45": "Nearly an hour", "o45s": "Up to 45 minutes",
+      "o90": "About an hour", "o90s": "Up to an hour and a half",
+      "o999": "All afternoon", "o999s": "No rush"
+    },
+    "prep": {
+      "titulo": "How much do you mind the setup?",
+      "ayuda": "Time to set up the table and deal (estimated).",
+      "o999": "I don't mind", "o999s": "No limit",
+      "o3": "Hardly at all", "o3s": "Take out the box and play (up to 3 min)",
+      "o10": "A little", "o10s": "Up to 10 minutes"
+    },
+    "dificultad": {
+      "titulo": "What level of challenge do you fancy?",
+      "ayuda": "Difficulty based on BoardGameGeek's weight (complexity).",
+      "ligero": "Light", "ligeroS": "Easy to explain and to play",
+      "medio": "Medium", "medioS": "Some thinking, nothing extreme",
+      "intenso": "Intense", "intensoS": "I want to think and suffer"
+    },
+    "modo": {
+      "titulo": "Cooperate or compete?",
+      "ayuda": "This question is ignored for solo games.",
+      "coop": "Cooperate", "coopS": "Everyone against the game",
+      "comp": "Compete", "compS": "Only one can win"
+    },
+    "party": {
+      "titulo": "What kind of atmosphere are you after?",
+      "si": "Party", "siS": "Laughs, speed and lots of people",
+      "no": "Something calmer", "noS": "Not a party game"
+    },
+    "ambientacion": {
+      "titulo": "Which theme appeals to you?"
+    },
+    "experiencia": {
+      "titulo": "What kind of experience are you after?",
+      "ayuda": "What you most want to feel during the game."
+    },
+    "novedad": {
+      "titulo": "Try something new or repeat a favourite?",
+      "ayuda": "Uses what you have logged: plays and your 1–5 rating.",
+      "nuevo": "Something new", "nuevoS": "Games you haven't played yet",
+      "favorito": "A favourite", "favoritoS": "The ones you rated 4–5"
+    },
+    "motivo": {
+      "mejorCon": "One of the best games for {jug}",
+      "funcionaCon": "Works well with {jug}",
+      "admite": "Supports {jug}",
+      "admiteNoIdeal": "Supports {jug}, although it is not its ideal number",
+      "cabe": "Fits your time ({dur})",
+      "cabeRapido": "Could finish within your time if it goes quickly ({dur})",
+      "prepRapida": "Quick to set up ({prep})",
+      "dificultad": "{nivel} difficulty, as you wanted",
+      "coop": "It is cooperative",
+      "comp": "It is competitive",
+      "party": "It is a party game",
+      "ambientacion": "Theme: {valor}",
+      "experiencia": "Offers {valor}",
+      "sinJugar": "You haven't played it yet",
+      "favorito": "One of your favourites (★ {nota})",
+      "gusto": "You liked it (★ {nota})",
+      "notaBaja": "Careful: you rated it low (★ {nota})",
+      "reciente": "You played it less than a week ago"
+    }
+  },
+
+  "crear": {
+    "titulo": "Add game · My board games",
+    "tituloNuevo": "Add a new game",
+    "editarExistente": "Edit an existing game",
+    "juegoNuevo": "New game",
+    "editarN": "Edit: {nombre}",
+    "pendienteP": "(pending)",
+    "guardar": "Save game",
+    "guardarCambios": "Save changes",
+    "vaciar": "Clear form",
+    "eliminar": "Delete game",
+    "eliminarSeguro": "Sure? Press again to delete",
+    "creado": "Game created!",
+    "guardado": "Changes saved.",
+    "eliminado": "Game deleted.",
+    "noEncontrado": "That game was not found.",
+    "revisa": "Please check these fields:",
+    "verCatalogo": "View the catalogue",
+    "buscarlo": "Find it",
+    "quitar": "Remove {valor}",
+    "sinIndicar": "not set",
+    "sinImagen": "No image",
+    "imagenFalla": "That image could not be loaded (a cover with initials will be shown).",
+    "s1": "1. The basics",
+    "s2": "2. Players and time",
+    "s3": "3. Difficulty",
+    "s4": "4. How it is played",
+    "s5": "5. Image and description",
+    "s6": "6. BoardGameGeek / link (optional)",
+    "f": {
+      "nombre": "Name *",
+      "nombrePlaceholder": "E.g.: Mansions of Madness",
+      "nombreOriginal": "Original name",
+      "anio": "Year",
+      "editorial": "Publisher",
+      "disenadores": "Designers",
+      "pendiente": "Leave it as <strong>pending</strong> (only the name is required; it will not be recommended by the assistant until completed)",
+      "jugadoresMin": "Minimum players *",
+      "jugadoresMax": "Maximum players *",
+      "mejorCon": "Best with (comma-separated)",
+      "recomendado": "Recommended with",
+      "duracionMin": "Minimum duration (min) *",
+      "duracionMax": "Maximum duration (min) *",
+      "preparacion": "Setup (min) *",
+      "preparacionPlaceholder": "E.g.: 5",
+      "edad": "Minimum age",
+      "peso": "Weight / complexity:",
+      "peso1": "1 · very easy",
+      "peso3": "3 · medium-heavy",
+      "peso5": "5 · very hard",
+      "pesoAyuda": "On BoardGameGeek it appears as “Weight”. Easy &lt; 2 · Medium &lt; 2.8 · Hard &lt; 3.5 · Expert otherwise.",
+      "modo": "Game mode *",
+      "party": "🎉 It is a <strong>party</strong> game",
+      "ambientacion": "Theme",
+      "experiencia": "Type of experience (used by the assistant)",
+      "mecanicas": "Mechanics",
+      "categorias": "Categories",
+      "imagen": "Image address (URL)",
+      "vistaPrevia": "Cover preview",
+      "descripcion": "Description",
+      "descripcionPlaceholder": "What the game is about, how it is played…",
+      "notas": "Notes (optional)",
+      "notasPlaceholder": "Something to check, where the data comes from…",
+      "enlace": "Link to the listing (BGG, Kickstarter…)",
+      "bggId": "BGG ID",
+      "valoracionBgg": "BGG rating (0–10)",
+      "rankingBgg": "BGG rank"
+    },
+    "ayuda": {
+      "disenadores": "Type a name and press Enter",
+      "ambientacion": "E.g.: Fantasy, Horror… (Enter to add)",
+      "experiencia": "E.g.: Deck building, Laughs and creativity…",
+      "mecanicas": "E.g.: Hand management, Dice rolling…",
+      "categorias": "E.g.: Card game, Adventure…"
+    },
+    "bgg": {
+      "leyenda": "Start from BoardGameGeek (optional)",
+      "etiqueta": "Fill in from BoardGameGeek",
+      "placeholder": "BGG number or listing address",
+      "boton": "⬇ Fill in from BGG",
+      "ayuda": "Replaces the fields BGG knows (it does not touch setup, theme, experience or party). Check the data before saving."
+    }
+  },
+
+  "val": {
+    "noExiste": "The game you are trying to edit no longer exists.",
+    "nombre": "The name is required.",
+    "imagen": "The image must be an address starting with http:// or https://.",
+    "enlace": "The link must start with http:// or https://.",
+    "anio": "The year does not look right.",
+    "jugMin": "Enter the minimum number of players (1 or more).",
+    "jugMax": "Enter the maximum number of players.",
+    "jugMaxMenor": "The maximum cannot be lower than the minimum.",
+    "durMin": "Enter the minimum duration in minutes.",
+    "durMax": "Enter the maximum duration in minutes.",
+    "durMaxMenor": "The maximum duration cannot be lower than the minimum.",
+    "prep": "Enter the setup time in minutes (0 if immediate).",
+    "peso": "The difficulty (weight) must be between 1 and 5.",
+    "valoracion": "The rating goes from 0 to 10.",
+    "modo": "Choose at least one game mode."
+  },
+
+  "copia": {
+    "titulo": "Backup",
+    "explicacion": "Export all your games to a <code>.json</code> file to keep them or move them to another device. When importing, the games in the file are added and, if you already have one with the same id, it is replaced; the rest are left untouched.",
+    "aviso": "Your games are stored only in this browser (on this device): if you clear the site data they are lost. Export a backup from time to time.",
+    "exportar": "⬆ Export games",
+    "importar": "⬇ Import games",
+    "dialogoCompartir": "Save or send the backup",
+    "lista": "Backup ready: {n} games in {archivo}.",
+    "errorExportar": "Could not export: {error}",
+    "errorImportar": "Could not import: {error}",
+    "nadaImportado": "Nothing was imported.",
+    "importado": "Import done: {nuevos} new games and {actualizados} updated.",
+    "jsonInvalido": "The file is not valid JSON.",
+    "sinLista": "The file does not contain a list of games.",
+    "vacio": "The file has no games.",
+    "juegoN": "Game {n}",
+    "noEsJuego": ": not a game.",
+    "faltaId": ": missing id.",
+    "idRepetido": ": the id “{id}” is duplicated.",
+    "faltaNombre": ": missing name.",
+    "faltanDatos": ": missing players, duration or setup.",
+    "faltanListas": ": missing lists (mode, theme, mechanics…)."
+  },
+
+  "datos": {
+    "danados": "The saved data is damaged; it has not been modified.",
+    "sinId": "A game without an id cannot be saved",
+    "noGuardado": "The games could not be saved (storage blocked or full)."
+  },
+
+  "bgg": {
+    "consultando": "Querying BGG…",
+    "cargado": "Data for “{nombre}” loaded into the form; nothing has been saved yet.",
+    "categorias": "categories",
+    "mecanicas": "mechanics",
+    "sinTraducir": "{n} {etiqueta} untranslated (left in English): {lista}.",
+    "espera": "BGG asks you to wait a little (too many requests). Try again in a minute.",
+    "errorHttp": "BGG responded with error {estado}.",
+    "sinDatos": "BGG returned no data for that id.",
+    "escribeId": "Enter the BGG number or paste the listing address (boardgamegeek.com/boardgame/…).",
+    "sinConexion": "Could not connect to BGG (or to the intermediate service). Check your connection and try again.",
+    "sinPeso": "BGG does not have a difficulty (weight) for this game yet: it was left as it was.",
+    "sinVotos": "BGG has no votes for recommended number of players.",
+    "descripcionIngles": "The description is in English: translate it before saving."
+  }
+}

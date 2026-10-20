@@ -1,0 +1,388 @@
+{
+  "_nombre": "Español",
+
+  "app": {
+    "logo": "🎲 Mis <span>juegos de mesa</span>"
+  },
+  "idioma": {
+    "etiqueta": "Idioma"
+  },
+  "nav": {
+    "catalogo": "Catálogo",
+    "crear": "➕ Crear juego",
+    "asistente": "✨ ¿A qué jugamos?"
+  },
+  "comun": {
+    "cargando": "Cargando…",
+    "cerrar": "Cerrar",
+    "verBgg": "Ver en BoardGameGeek"
+  },
+  "error": {
+    "carga": "No se pudieron cargar los juegos"
+  },
+  "unidad": {
+    "min": "min",
+    "minN": "{n} min",
+    "horasN": "{n} h"
+  },
+  "jugadores": {
+    "one": "{n} jugador",
+    "other": "{n} jugadores"
+  },
+  "dificultad": {
+    "facil": "Fácil",
+    "media": "Media",
+    "dificil": "Difícil",
+    "experto": "Experto",
+    "est": "(est.)"
+  },
+  "imagen": {
+    "portada": "Portada de {nombre}"
+  },
+  "valores": {
+    "modo": {
+      "Cooperativo": "Cooperativo",
+      "Competitivo": "Competitivo",
+      "Solitario": "Solitario",
+      "Semicooperativo": "Semicooperativo",
+      "Por equipos": "Por equipos",
+      "Con app": "Con app",
+      "Narrativo": "Narrativo"
+    }
+  },
+  "historial": {
+    "vecesJugado": "Veces jugado: <strong>{n}</strong>",
+    "quitarAria": "Quitar una partida",
+    "registrar": "+ Registrar partida",
+    "miNota": "Mi nota:",
+    "ultima": "Última partida: {fecha}",
+    "sinJugar": "Aún sin jugar",
+    "notaAria": "Nota: {nota} de 5",
+    "estrellasAria": {
+      "one": "{n} estrella",
+      "other": "{n} estrellas"
+    }
+  },
+
+  "catalogo": {
+    "titulo": "Mis juegos de mesa",
+    "juegos": "juegos",
+    "ningunoEncaja": "Ningún juego encaja",
+    "quitaFiltros": "Prueba a quitar algún filtro.",
+    "vacioTitulo": "Aún no tienes juegos",
+    "vacioTexto": "Esta web guarda tu colección en este navegador y empieza vacía. <a href=\"crear.html\">Crea tu primer juego</a> o importa una copia (archivo .json) desde la sección «Copia de seguridad» de <a href=\"crear.html\">Crear juego</a>.",
+    "editar": "Editar este juego",
+    "pendienteAviso": "Este juego está pendiente de rellenar: pulsa «Editar este juego» para completar sus datos."
+  },
+  "cinta": {
+    "pendiente": "Pendiente",
+    "sinVerificar": "Sin verificar",
+    "party": "Party"
+  },
+  "ficha": {
+    "jugadores": "Jugadores",
+    "mejorCon": "Mejor con",
+    "duracion": "Duración",
+    "preparacion": "Preparación",
+    "dificultad": "Dificultad",
+    "edad": "Edad",
+    "valoracion": "Valoración BGG",
+    "modo": "Modo",
+    "mecanicas": "Mecánicas",
+    "categorias": "Categorías",
+    "diseno": "Diseño: {valor}",
+    "editorial": "Editorial: {valor}"
+  },
+  "filtros": {
+    "titulo": "Filtros",
+    "limpiar": "Limpiar",
+    "cerrar": "Cerrar filtros",
+    "abrir": "☰ Filtros",
+    "buscar": "Buscar",
+    "buscarPlaceholder": "Nombre, mecánica, tema…",
+    "numJugadores": "Número de jugadores",
+    "cualquiera": "Cualquiera",
+    "solitario": "1 (solitario)",
+    "ochoOMas": "8 o más",
+    "tiempoPartida": "Tiempo de partida:",
+    "tiempoPrep": "Tiempo de preparación:",
+    "sinLimite": "Sin límite",
+    "hasta": "hasta {valor}",
+    "tipo": "Tipo",
+    "party": "🎉 Juegos party",
+    "dificultad": "Dificultad",
+    "modo": "Modo de juego",
+    "ambientacion": "Ambientación",
+    "misPartidas": "Mis partidas",
+    "todos": "Todos",
+    "sinEstrenar": "Sin estrenar",
+    "jugados": "Ya jugados",
+    "favoritos": "Favoritos (nota 4–5)",
+    "mecanicas": "Mecánicas (deben estar todas)"
+  },
+  "orden": {
+    "etiqueta": "Ordenar",
+    "nombre": "Ordenar: nombre",
+    "duracion": "Ordenar: duración",
+    "preparacion": "Ordenar: preparación",
+    "dificultad": "Ordenar: dificultad",
+    "valoracion": "Ordenar: valoración BGG",
+    "jugadores": "Ordenar: máx. jugadores",
+    "masJugados": "Ordenar: más jugados",
+    "miNota": "Ordenar: mi nota",
+    "invertir": "Invertir el orden",
+    "asc": "↑ Asc.",
+    "desc": "↓ Desc.",
+    "ariaAsc": "Orden ascendente. Pulsa para invertirlo",
+    "ariaDesc": "Orden descendente. Pulsa para invertirlo"
+  },
+
+  "asist": {
+    "titulo": "¿A qué jugamos? · Mis juegos de mesa",
+    "igual": "Me da igual",
+    "pregunta": "Pregunta {n} de {total}",
+    "atras": "← Atrás",
+    "verCatalogo": "Ver catálogo",
+    "reiniciar": "Volver a empezar",
+    "cambiarUltima": "← Cambiar la última respuesta",
+    "tambien": "También podrían encajar",
+    "mejorOpcion": "Vuestra mejor opción",
+    "otraOpcion": "Otra opción: nº {n}",
+    "afinidad": "{n}% de afinidad",
+    "afinidadCorta": "{n}% afinidad",
+    "jugamos": "¡Jugamos a este!",
+    "otra": "Enséñame otra opción",
+    "registrada": "Partida registrada. ¡A disfrutar! Cuando acabéis, ponedle nota arriba.",
+    "nadaTitulo": "Vaya, nada encaja",
+    "nadaTexto": "Ningún juego de la colección admite ese número de jugadores. ¡Toca comprar uno nuevo!",
+    "vacioTitulo": "Aún no hay juegos",
+    "vacioTexto": "El asistente recomienda juegos de tu colección, y todavía está vacía. <a href=\"crear.html\">Crea un juego</a> o importa una copia desde <a href=\"crear.html\">Crear juego</a>.",
+    "relajado": "Ningún juego cumplía exactamente todo lo que pedíais, así que he relajado {lista}.",
+    "relajar": {
+      "tiempo": "el tiempo disponible",
+      "preparacion": "la preparación",
+      "modo": "cooperar/competir",
+      "party": "lo de party"
+    },
+    "jugadores": {
+      "titulo": "¿Cuántos vais a jugar?",
+      "ayuda": "Solo se tendrán en cuenta los juegos que admitan ese número de jugadores.",
+      "ochoOMas": "8 o más",
+      "solitario": "Partida en solitario"
+    },
+    "tiempo": {
+      "titulo": "¿Cuánto tiempo tenéis para la partida?",
+      "ayuda": "Sin contar la explicación ni la preparación.",
+      "o20": "Un ratito", "o20s": "Hasta 20 minutos",
+      "o45": "Media hora larga", "o45s": "Hasta 45 minutos",
+      "o90": "Una hora o así", "o90s": "Hasta hora y media",
+      "o999": "Toda la tarde", "o999s": "Sin prisas"
+    },
+    "prep": {
+      "titulo": "¿Cuánto os importa la preparación?",
+      "ayuda": "Tiempo de montar la mesa y repartir (estimado).",
+      "o999": "No me importa", "o999s": "Sin límite",
+      "o3": "Casi nada", "o3s": "Sacar la caja y jugar (hasta 3 min)",
+      "o10": "Un poco", "o10s": "Hasta 10 minutos"
+    },
+    "dificultad": {
+      "titulo": "¿Qué nivel de reto os apetece?",
+      "ayuda": "Dificultad según el peso (complejidad) de BoardGameGeek.",
+      "ligero": "Ligero", "ligeroS": "Fácil de explicar y de jugar",
+      "medio": "Intermedio", "medioS": "Algo de cabeza, sin pasarse",
+      "intenso": "Intenso", "intensoS": "Quiero pensar y sufrir"
+    },
+    "modo": {
+      "titulo": "¿Cooperar o competir?",
+      "ayuda": "En solitario esta pregunta no se tiene en cuenta.",
+      "coop": "Cooperar", "coopS": "Todos contra el juego",
+      "comp": "Competir", "compS": "Solo puede ganar uno"
+    },
+    "party": {
+      "titulo": "¿Qué ambiente buscáis?",
+      "si": "Party", "siS": "Risas, rapidez y mucha gente",
+      "no": "Algo más tranquilo", "noS": "Sin ser un juego party"
+    },
+    "ambientacion": {
+      "titulo": "¿Qué ambientación os llama?"
+    },
+    "experiencia": {
+      "titulo": "¿Qué tipo de experiencia buscáis?",
+      "ayuda": "Lo que más os apetece sentir durante la partida."
+    },
+    "novedad": {
+      "titulo": "¿Probar algo nuevo o repetir un favorito?",
+      "ayuda": "Usa lo que has registrado: partidas jugadas y tu nota de 1 a 5.",
+      "nuevo": "Algo sin estrenar", "nuevoS": "Juegos que aún no habéis jugado",
+      "favorito": "Un favorito", "favoritoS": "Los que habéis puntuado con 4–5"
+    },
+    "motivo": {
+      "mejorCon": "Es de los mejores juegos para {jug}",
+      "funcionaCon": "Funciona bien con {jug}",
+      "admite": "Admite {jug}",
+      "admiteNoIdeal": "Admite {jug}, aunque no es su número ideal",
+      "cabe": "Cabe en vuestro tiempo ({dur})",
+      "cabeRapido": "Puede cerrarse en vuestro tiempo si va rápido ({dur})",
+      "prepRapida": "Se prepara rápido ({prep})",
+      "dificultad": "Dificultad {nivel}, como buscabais",
+      "coop": "Es cooperativo",
+      "comp": "Es competitivo",
+      "party": "Es un juego party",
+      "ambientacion": "Ambientación: {valor}",
+      "experiencia": "Ofrece {valor}",
+      "sinJugar": "Todavía no lo habéis jugado",
+      "favorito": "Es de vuestros favoritos (★ {nota})",
+      "gusto": "Os gustó (★ {nota})",
+      "notaBaja": "Ojo: lo puntuasteis bajo (★ {nota})",
+      "reciente": "Lo jugasteis hace menos de una semana"
+    }
+  },
+
+  "crear": {
+    "titulo": "Crear juego · Mis juegos de mesa",
+    "tituloNuevo": "Crear un juego nuevo",
+    "editarExistente": "Editar un juego existente",
+    "juegoNuevo": "Juego nuevo",
+    "editarN": "Editar: {nombre}",
+    "pendienteP": "(pendiente)",
+    "guardar": "Guardar juego",
+    "guardarCambios": "Guardar cambios",
+    "vaciar": "Vaciar formulario",
+    "eliminar": "Eliminar juego",
+    "eliminarSeguro": "¿Seguro? Pulsa otra vez para eliminar",
+    "creado": "¡Juego creado!",
+    "guardado": "Cambios guardados.",
+    "eliminado": "Juego eliminado.",
+    "noEncontrado": "No se encontró ese juego.",
+    "revisa": "Revisa estos campos:",
+    "verCatalogo": "Ver el catálogo",
+    "buscarlo": "Buscarlo",
+    "quitar": "Quitar {valor}",
+    "sinIndicar": "sin indicar",
+    "sinImagen": "Sin imagen",
+    "imagenFalla": "No se pudo cargar esa imagen (se verá una portada con iniciales).",
+    "s1": "1. Lo básico",
+    "s2": "2. Jugadores y tiempo",
+    "s3": "3. Dificultad",
+    "s4": "4. Cómo se juega",
+    "s5": "5. Imagen y descripción",
+    "s6": "6. BoardGameGeek / enlace (opcional)",
+    "f": {
+      "nombre": "Nombre *",
+      "nombrePlaceholder": "Ej.: Las mansiones de la locura",
+      "nombreOriginal": "Nombre original",
+      "anio": "Año",
+      "editorial": "Editorial",
+      "disenadores": "Diseñadores",
+      "pendiente": "Dejarlo como <strong>pendiente</strong> (solo el nombre es obligatorio; no se recomendará en el asistente hasta completarlo)",
+      "jugadoresMin": "Mínimo de jugadores *",
+      "jugadoresMax": "Máximo de jugadores *",
+      "mejorCon": "Mejor con (separado por comas)",
+      "recomendado": "Recomendado con",
+      "duracionMin": "Duración mínima (min) *",
+      "duracionMax": "Duración máxima (min) *",
+      "preparacion": "Preparación (min) *",
+      "preparacionPlaceholder": "Ej.: 5",
+      "edad": "Edad mínima",
+      "peso": "Peso / complejidad:",
+      "peso1": "1 · muy fácil",
+      "peso3": "3 · media-alta",
+      "peso5": "5 · muy difícil",
+      "pesoAyuda": "En BoardGameGeek aparece como «Weight». Fácil &lt; 2 · Media &lt; 2,8 · Difícil &lt; 3,5 · Experto resto.",
+      "modo": "Modo de juego *",
+      "party": "🎉 Es un juego <strong>party</strong>",
+      "ambientacion": "Ambientación",
+      "experiencia": "Tipo de experiencia (lo usa el asistente)",
+      "mecanicas": "Mecánicas",
+      "categorias": "Categorías",
+      "imagen": "Dirección de la imagen (URL)",
+      "vistaPrevia": "Vista previa de la portada",
+      "descripcion": "Descripción",
+      "descripcionPlaceholder": "De qué va el juego, cómo se juega…",
+      "notas": "Notas (opcional)",
+      "notasPlaceholder": "Algo a revisar, de dónde salen los datos…",
+      "enlace": "Enlace a la ficha (BGG, Kickstarter…)",
+      "bggId": "ID de BGG",
+      "valoracionBgg": "Valoración BGG (0–10)",
+      "rankingBgg": "Ranking BGG"
+    },
+    "ayuda": {
+      "disenadores": "Escribe un nombre y pulsa Intro",
+      "ambientacion": "Ej.: Fantasía, Terror… (Intro para añadir)",
+      "experiencia": "Ej.: Construcción de mazos, Risas y creatividad…",
+      "mecanicas": "Ej.: Gestión de mano, Tirada de dados…",
+      "categorias": "Ej.: Juego de cartas, Aventura…"
+    },
+    "bgg": {
+      "leyenda": "Empezar desde BoardGameGeek (opcional)",
+      "etiqueta": "Rellenar desde BoardGameGeek",
+      "placeholder": "Número de BGG o dirección de la ficha",
+      "boton": "⬇ Rellenar desde BGG",
+      "ayuda": "Sustituye los campos que BGG conoce (no toca preparación, ambientación, experiencia ni party). Revisa los datos antes de guardar."
+    }
+  },
+
+  "val": {
+    "noExiste": "El juego que intentas editar ya no existe.",
+    "nombre": "El nombre es obligatorio.",
+    "imagen": "La imagen debe ser una dirección que empiece por http:// o https://.",
+    "enlace": "El enlace debe empezar por http:// o https://.",
+    "anio": "El año no parece correcto.",
+    "jugMin": "Indica el mínimo de jugadores (1 o más).",
+    "jugMax": "Indica el máximo de jugadores.",
+    "jugMaxMenor": "El máximo no puede ser menor que el mínimo.",
+    "durMin": "Indica la duración mínima en minutos.",
+    "durMax": "Indica la duración máxima en minutos.",
+    "durMaxMenor": "La duración máxima no puede ser menor que la mínima.",
+    "prep": "Indica el tiempo de preparación en minutos (0 si es inmediato).",
+    "peso": "La dificultad (peso) debe estar entre 1 y 5.",
+    "valoracion": "La valoración va de 0 a 10.",
+    "modo": "Elige al menos un modo de juego."
+  },
+
+  "copia": {
+    "titulo": "Copia de seguridad",
+    "explicacion": "Exporta todos tus juegos a un archivo <code>.json</code> para guardarlos o pasarlos a otro dispositivo. Al importar, los juegos del archivo se añaden y, si ya tienes uno con el mismo id, se sustituye; el resto no se toca.",
+    "aviso": "Tus juegos se guardan solo en este navegador (en este dispositivo): si borras los datos del sitio se pierden. Exporta una copia de vez en cuando.",
+    "exportar": "⬆ Exportar juegos",
+    "importar": "⬇ Importar juegos",
+    "dialogoCompartir": "Guardar o enviar la copia",
+    "lista": "Copia lista: {n} juegos en {archivo}.",
+    "errorExportar": "No se pudo exportar: {error}",
+    "errorImportar": "No se pudo importar: {error}",
+    "nadaImportado": "No se ha importado nada.",
+    "importado": "Importación hecha: {nuevos} juegos nuevos y {actualizados} actualizados.",
+    "jsonInvalido": "El archivo no es un JSON válido.",
+    "sinLista": "El archivo no contiene una lista de juegos.",
+    "vacio": "El archivo no tiene ningún juego.",
+    "juegoN": "Juego {n}",
+    "noEsJuego": ": no es un juego.",
+    "faltaId": ": falta el id.",
+    "idRepetido": ": el id «{id}» está repetido.",
+    "faltaNombre": ": falta el nombre.",
+    "faltanDatos": ": faltan jugadores, duración o preparación.",
+    "faltanListas": ": faltan listas (modo, ambientación, mecánicas…)."
+  },
+
+  "datos": {
+    "danados": "Los datos guardados están dañados; no se han modificado.",
+    "sinId": "No se puede guardar un juego sin id",
+    "noGuardado": "No se pudieron guardar los juegos (almacenamiento bloqueado o lleno)."
+  },
+
+  "bgg": {
+    "consultando": "Consultando BGG…",
+    "cargado": "Datos de «{nombre}» cargados en el formulario; aún no se ha guardado nada.",
+    "categorias": "categorías",
+    "mecanicas": "mecánicas",
+    "sinTraducir": "{n} {etiqueta} sin traducir (se han dejado en inglés): {lista}.",
+    "espera": "BGG pide esperar un poco (demasiadas peticiones). Prueba de nuevo en un minuto.",
+    "errorHttp": "BGG respondió con el error {estado}.",
+    "sinDatos": "BGG no devolvió datos para ese id.",
+    "escribeId": "Escribe el número de BGG o pega la dirección de la ficha (boardgamegeek.com/boardgame/…).",
+    "sinConexion": "No se ha podido conectar con BGG (o con el servicio intermedio). Comprueba tu conexión e inténtalo de nuevo.",
+    "sinPeso": "BGG todavía no tiene dificultad (peso) para este juego: se ha dejado como estaba.",
+    "sinVotos": "BGG no tiene votos de número de jugadores recomendado.",
+    "descripcionIngles": "La descripción viene en inglés: tradúcela antes de guardar."
+  }
+}
